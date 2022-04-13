@@ -4,11 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b1c9dc8e3b.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="./script.js"></script>
     <title>Etch-A-Sketch</title>
   </head>
   <body>
-    <p>Testing the git repo hello case</p>
+    <header>
+      <div class="container">
+        <nav class="nav-main">
+          <div class="logo-container">
+            <img class="donut" src="img/donut.svg" alt="Dan's Donuts &trade;" />
+            <span class="words-main">Dan's Donuts</span>
+            <span class="words-tag">dev made hole</span>
+          </div>
+          <!-- hamburger -->
+          <span class="hamburger">
+            <i class="icon fa-solid fa-bars" data-mobile="hamburger"></i>
+            <i class="hidden icon fa-solid fa-xmark" data-mobile="close"></i>
+          </span>
+          <!-- mobile menu -->
+          <div class="hidden mobile-menu" data-mobile="menu">
+            <a href="https://github.com" target="_blank" class="link">
+              <i class="icon fa-solid fa-code-branch"></i>
+              <span class="icon">github</span>
+            </a>
+            <a href="https://codepen.io" target="_blank" class="link">
+              <i class="icon fa-brands fa-codepen"></i>
+              <span class="icon">codepen</span>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="link">
+              <i class="icon fa-brands fa-twitter"></i>
+              <span class="icon">twitter</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="title">Etch-A-Sketch</h1>
+        <div class="grid" data-UI="grid"></div>
+        <!-- Settings -->
+        <div class="settings-container">
+          <input class="color-picker" type="color" data-UI="colorPicker" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="logo-container">
+        <img class="donut" src="img/donut.svg" alt="Dan's Donuts &trade;" />
+        <span>Dan's Donuts &trade; All rights reserved 2022</span>
+      </div>
+    </footer>
   </body>
 </html>
