@@ -137,7 +137,8 @@ nav {
   width: 300px;
   aspect-ratio: 1;
   margin: 0 auto;
-  border: #2E2929 1px solid;
+  border: #2E2929 2px solid;
+  border-radius: 5px;
 }
 
 .settings-container {
@@ -177,6 +178,40 @@ nav {
 .ui-btn:hover {
   color: var(--clr-bg);
   background-color: var(--clr-primary);
+}
+
+.gridsize-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gridsize-display {
+  display: block;
+}
+
+.progress-bar {
+  accent-color: var(--clr-secondary);
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.arrow-btn {
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-secondary);
+  border: none;
+  border-radius: .25rem;
+}
+
+.arrow-icon {
+  font-size: var(--fs-icon);
+  color: var(--clr-primary);
 }
 
 footer {
