@@ -167,16 +167,21 @@ nav {
   border-radius: 1rem;
   color: var(--clr-primary);
   letter-spacing: .25rem;
+  opacity: .6;
+  transition: .3s;
 }
 
 .btn-selected {
-  color: var(--clr-bg);
-  background-color: var(--clr-primary);
+  /* color: var(--clr-bg);
+  background-color: var(--clr-primary); */
+  opacity: 1;
+  transition: .3s;
 }
 
 .ui-btn:hover {
-  color: var(--clr-bg);
-  background-color: var(--clr-primary);
+  /* color: var(--clr-bg);
+  background-color: var(--clr-primary); */
+  opacity: 1;
 }
 
 .gridsize-container {
