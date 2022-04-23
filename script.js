@@ -118,8 +118,18 @@ function initGridSizeSelector(decrease, increase, progress, display,gridContaine
   });
 }
 
+function initColorPicker(colorPickerElem) {
+  colorPickerElem.addEventListener('click', () => {
+    currMode = 'color';
+    colorMode.classList.add('btn-selected');
+    rainbowMode.classList.remove('btn-selected');
+    eraserMode.classList.remove('btn-selected');
+  });
+}
+
 function initPaintMode(modeColor, modeRainbow, modeEraser, modeClear) {
   modeColor.addEventListener('click', () => {
+    if (currMode === 'color') return;
     currMode = 'color';
     modeColor.classList.add('btn-selected');
     modeRainbow.classList.remove('btn-selected');
@@ -127,6 +137,7 @@ function initPaintMode(modeColor, modeRainbow, modeEraser, modeClear) {
   });
 
   modeRainbow.addEventListener('click', () => {
+    if (currMode === 'rainbow') return;
     currMode = 'rainbow';
     modeRainbow.classList.add('btn-selected');
     modeColor.classList.remove('btn-selected');
@@ -134,6 +145,7 @@ function initPaintMode(modeColor, modeRainbow, modeEraser, modeClear) {
   });
 
   modeEraser.addEventListener('click', () => {
+    if (currMode === 'eraser') return;
     currMode = 'eraser';
     modeEraser.classList.add('btn-selected');
     modeRainbow.classList.remove('btn-selected');
@@ -177,6 +189,7 @@ const clearMode = document.querySelector('[data-mode="clear"]');
 let currColor = '#000000';
 let currMode = 'color';
 initPaintMode(colorMode, rainbowMode, eraserMode, clearMode);
+initColorPicker(colorPicker);
 
 
 
