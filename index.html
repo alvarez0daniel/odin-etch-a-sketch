@@ -57,35 +57,37 @@
     <main>
       <div class="container">
         <h1 class="title">Etch-A-Sketch</h1>
-        <div class="grid" data-UI="grid-container"></div>
-        <!-- Settings -->
-        <div class="settings-container">
-          <input class="color-picker" type="color" data-UI="colorPicker" />
-          <button class="ui-btn btn-selected" data-mode="color">
-            COLOR PICKER
-          </button>
-          <button class="ui-btn" data-mode="rainbow">RAINBOW MODE</button>
-          <button class="ui-btn" data-mode="eraser">ERASER</button>
-          <button class="ui-btn" data-mode="clear">CLEAR</button>
-          <div class="gridsize-container">
-            <span class="gridsize-display" data-UI="gridSizeDisplay"
-              >16x16</span
-            >
-            <progress
-              class="progress-bar"
-              data-UI="progress"
-              min="0"
-              max="128"
-              step="16"
-              value="16"
-            ></progress>
-            <div class="arrow-container">
-              <button class="arrow-btn" data-arrow="left">
-                <i class="arrow-icon fa-solid fa-arrow-left"></i>
-              </button>
-              <button class="arrow-btn" data-arrow="right">
-                <i class="arrow-icon fa-solid fa-arrow-right"></i>
-              </button>
+        <div class="ui">
+          <div class="grid" data-UI="grid-container"></div>
+          <!-- Settings -->
+          <div class="settings-container">
+            <input class="color-picker" type="color" data-UI="colorPicker" />
+            <button class="ui-btn btn-selected" data-mode="color">
+              COLOR PICKER
+            </button>
+            <button class="ui-btn" data-mode="rainbow">RAINBOW MODE</button>
+            <button class="ui-btn" data-mode="eraser">ERASER</button>
+            <button class="ui-btn" data-mode="clear">CLEAR</button>
+            <div class="gridsize-container">
+              <span class="gridsize-display" data-UI="gridSizeDisplay"
+                >16x16</span
+              >
+              <progress
+                class="progress-bar"
+                data-UI="progress"
+                min="0"
+                max="128"
+                step="16"
+                value="16"
+              ></progress>
+              <div class="arrow-container">
+                <button class="arrow-btn" data-arrow="left">
+                  <i class="arrow-icon fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="arrow-btn" data-arrow="right">
+                  <i class="arrow-icon fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>

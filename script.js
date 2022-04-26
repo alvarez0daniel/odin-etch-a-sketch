@@ -89,6 +89,7 @@ function generateGrid(size) {
 }
 
 function clearGrid(gridElem, size) {
+  console.log('clearGrid');
   gridElem.remove();
   
   return generateGrid(size);

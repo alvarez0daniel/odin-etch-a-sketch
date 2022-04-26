@@ -130,6 +130,11 @@ nav {
   margin-bottom: 1rem;
 }
 
+.ui {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .grid {
   display: grid;
   width: 300px;
@@ -233,7 +238,7 @@ footer {
 
   .grid {
     width: 400px;
-    box-shadow: 10px 10px 2px 1px var(--clr-primary);
+    box-shadow: 10px 10px 10px 1px #2E292950;
   }
 }
 
